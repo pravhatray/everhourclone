@@ -1,6 +1,7 @@
 {
   "name": "front_end",
   "version": "0.1.0",
+  "homepage": "https://pravhatray.github.io/everhourclone",
   "private": true,
   "dependencies": {
     "@chakra-ui/icons": "^2.0.10",
@@ -29,6 +30,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
